@@ -5,6 +5,7 @@ def classify(features_train, labels_train):
     ### return the fit classifier
 
     ### komentarz
+    # nowy kom
 
     ### your code goes here!
     from sklearn import tree
