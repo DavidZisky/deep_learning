@@ -1,0 +1,9 @@
+clf1 = tree.DecisionTreeClassifier(min_samples_split=2)
+clf1.fit(features_train,labels_train)
+data1 = clf1.predict(features_test)
+acc_min_samples_split_2 = accuracy_score(labels_test, data1)
+
+clf2 = tree.DecisionTreeClassifier(min_samples_split=50)
+clf2.fit(features_train,labels_train)
+data2 = clf2.predict(features_test)
+acc_min_samples_split_50 = accuracy_score(labels_test, data2)
